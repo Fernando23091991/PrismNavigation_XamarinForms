@@ -7,6 +7,6 @@
     Title="MainPage">
 	<StackLayout HorizontalOptions="Center" VerticalOptions="Center">
 		<Label Text="{Binding Title}" />
-        <Button Text="Go To Data Page" Command="{Binding GoToDataPage}" CommandParameter="DataPage"/>
+        <Button Text="Go To Data Page" Command="{Binding GoToPage}" CommandParameter="DataPage"/>
 	</StackLayout>
 </ContentPage>
