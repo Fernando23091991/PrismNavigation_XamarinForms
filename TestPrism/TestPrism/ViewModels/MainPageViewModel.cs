@@ -32,11 +32,6 @@ namespace TestPrism.ViewModels
         {
 
         }
-
-        void HandleEvent(string payload)
-        {
-            Title = payload;
-        }
     }
 }
 
