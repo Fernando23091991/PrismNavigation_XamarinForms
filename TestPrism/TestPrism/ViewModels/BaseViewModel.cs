@@ -60,11 +60,11 @@ namespace TestPrism.ViewModels
             }
         }
 
-        public void InvokeGoBack()
+        public async void InvokeGoBack()
         {
             try
             {
-                _navigationService.GoBackAsync();
+                await _navigationService.GoBackAsync();
 
             }
             catch (Exception ex)
