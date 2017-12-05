@@ -18,11 +18,11 @@ namespace TestPrism.ViewModels
         {
             this._navigationService = navigationService;
             this._eventAggregator = eventAggregator;
-            GoToDataPage = new Command<string>(InvokeGoToDataPage);
+            GoToPage = new Command<string>(InvokeGoToPage);
             GoBack = new Command(InvokeGoBack);
         }
 
-        public Command<string> GoToDataPage { get; }
+        public Command<string> GoToPage { get; }
 
         public Command GoBack { get; }
 
@@ -47,7 +47,7 @@ namespace TestPrism.ViewModels
             //throw new NotImplementedException();
         }
 
-        public async void InvokeGoToDataPage(string name)
+        public async void InvokeGoToPage(string name)
         {
             try
             {
